@@ -6,57 +6,66 @@
 <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
 	<title>Quiz</title>
 </head>
-<body>
+<body id="bodqz">
+
 <header>
-<a class = "links" href="Home.html">Home</a> <a class ="links" href="Quiz.html">Quiz</a> <a class="links" href="About.html">About</a>
+<a class = "links" id="home" href="Home.html">Home</a> <a class ="links" id="quiz" href="Quiz.html">Quiz</a> <a class = "links" id="studio" href="Studio.html">Studio</a> <a class="links" id="about" href="About.html">About</a>
 </header>
+<div id="mgs"> <button class="mgs" onclick="next()">Next</button> <button class="mgs" onclick="previous()">Previous</button></div>
+<div id="bodyqz">
 <form>
-	<p>1. Who joined Neil Armstrong and Buzz Aldrin on the Apollo 11 mission?</p>
+	<p class="questions">1. Who joined Neil Armstrong and Buzz Aldrin on the Apollo 11 mission?</p>
+	<div class="answers">
 	<input type="radio" name="1" value="correct"> Michael Collins<br>
-	<input type="radio" name="1" > Michael Jackson<br>
-	<input type="radio" name="1" > James Lovell
-</form>
+	<input type="radio" name="1"> Michael Jackson<br>
+	<input type="radio" name="1"> James Lovell
+</div></form>
 <br>
 <!-- <br> -->
 <form>
-	<p>2. Apollo 11 launched on a 363-foot-tall rocket called what?</p>
+	<p class="questions">2. Apollo 11 launched on a 363-foot-tall rocket called what?</p>
+	<div class="answers">
 	<input type="radio" name="2"> Jupiter C<br>
 	<input type="radio" name="2" value="correct"> Saturn V<br>
 	<input type="radio" name="2"> Johnny Five
-</form>
+</div></form>
 <br>
 <!-- <br> -->
 <form>
-	<p>3. The Apollo 11 command and lunar modules were named Columbia and what?</p>
+	<p class="questions">3. The Apollo 11 command and lunar modules were named Columbia and what?</p>
+	<div class="answers">
 	<input type="radio" name="3"> Flacon C<br>
 	<input type="radio" name="3" value="correct"> Eagle V<br>
 	<input type="radio" name="3"> Snoopy
-</form>
+</div></form>
 <br>
 <!-- <br> -->
 <form>
-	<p>
+	<p class="questions">
 		4. What was the first phrase spoken on the moon?
-	</p>
+	</p><div class="answers">
 	<input type="radio" name="4"> Houston, Tranquility Base here ...<br>
 	<input type="radio" name="4"> That's one small step for a man <br>
 	<input type="radio" name="4" value="correct"> Contact light
-</form>
+</div></form>
 <br>
 <form>
-	<p>5. Neil Armstrong’s first task after stepping on the moon was what?</p>
+	<p class="questions">5. Neil Armstrong’s first task after stepping on the moon was what?</p><div class="answers">
 	<input type="radio" name="5"> Plant the American flag<br>
 	<input type="radio" name="5" value="correct"> Collect a moon rock<br>
 	<input type="radio" name="5"> Call President Richard Nixon
-</form>
+</div></form>
 <br>
 <form>
-	<p>6. For how long did Neil Armstrong and Buzz Aldrin walked on the moon?</p>
+	<p class="questions">6. For how long did Neil Armstrong and Buzz Aldrin walked on the moon?</p><div class="answers">
 	<input type="radio" name="6"> 22 hours, 4 minutes<br>
 	<input type="radio" name="6" value="correct"> 2 hours, 30 minutes<br>
 	<input type="radio" name="6"> 7 hours, 15 minutes
-</form>
+</div></form>
 <br>
 <button id="result" onclick="result()">Get Result</button>
+
+
+</div>
 </body>
 </html>

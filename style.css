@@ -38,9 +38,6 @@ a{
 a.links, a.links:hover, a.links:focus
 {
     color: white;
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
     transition: 500ms linear 0s;
     outline: 0 none;
 }
@@ -156,4 +153,81 @@ a.links:hover, a.links:focus
 #mgs{
     position: absolute;
     right: 50px;
+}
+
+#stdbg{
+    background-image: url('Stdbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    height: 100%;
+    width: 99%;
+}
+
+
+.std{
+    width: 400px;
+    height: 300px;
+}
+
+/*.stdx:hover , .std:hover{
+    opacity: 1;
+}*/
+.stdx{
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 400px;
+    height: 300px;
+    opacity: 0;
+}
+
+#xt{
+    position: absolute;
+    top: 80px;
+    left: 5px;
+}
+#xt1{
+    position: absolute;
+    top: 80px;
+    left: 815px;
+}
+
+#xt2{
+    position: absolute;
+    top: 385px;
+    left: 815px;
+}
+#xt3{
+    position: absolute;
+    top: 80px;
+    left: 409px;
+}
+
+.hv:hover .stdx{
+    transition: 500ms linear 0s;
+    opacity: 1;
+}
+
+.hv:hover, .stdx:focus
+{
+    color: white;
+    transition: 1000ms linear 0s;
+    outline: 0 none;
+}
+
+.hv:hover, .stdx:focus
+{
+    color: #fff;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+#xt4{
+    position: absolute;
+    top: 385px;
+    left: 5px;
+}
+#xt5{
+    position: absolute;
+    top: 385px;
+    left: 409px;
 }
